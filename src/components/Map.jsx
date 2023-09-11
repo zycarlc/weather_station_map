@@ -1,9 +1,9 @@
 import { GoogleMap, MarkerF, InfoWindowF } from "@react-google-maps/api"
 import { useEffect, useState } from "react"
-import { getUserLocation, getStationsLocation } from "./getLocations"
 import { Box, Button } from "@mui/material"
 import NearMeIcon from "@mui/icons-material/NearMe"
 
+import { getUserLocation, getStationsLocation } from "../lib/getLocations.js"
 import InfoCard from "./InfoCard"
 import UserInfoCard from "./UserInfoCard"
 

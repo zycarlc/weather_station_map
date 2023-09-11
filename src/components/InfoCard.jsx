@@ -12,7 +12,7 @@ import {
 import { useEffect, useState } from "react"
 import dayjs from "dayjs"
 
-import { variables, getWeatherData } from "./getWeatherData"
+import { variables, getWeatherData } from "../lib/getWeatherData.js"
 
 export default function InfoCard(station) {
     const [weatherData, setWeatherData] = useState([])

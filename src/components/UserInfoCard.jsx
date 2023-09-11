@@ -1,6 +1,7 @@
 import { Card, CardContent, Typography } from "@mui/material"
 import { useEffect, useState } from "react"
-import getUserWeather from "./getUserWeather"
+
+import getUserWeather from "../lib/getUserWeather.js"
 import dayjs from "dayjs"
 
 export default function UserInfoCard({ userLocation }) {
