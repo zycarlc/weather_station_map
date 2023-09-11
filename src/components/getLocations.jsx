@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export function getUserLocation() {
+export async function getUserLocation() {
     return axios
         .post(
             "https://www.googleapis.com/geolocation/v1/geolocate?key=" +
@@ -12,7 +12,7 @@ export function getUserLocation() {
         })
 }
 
-export function getStationsLocation() {
+export async function getStationsLocation() {
     return axios({
         method: "get",
         url: "http://localhost:5038/stations",
